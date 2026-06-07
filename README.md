@@ -1,14 +1,15 @@
-# Fang Cheng Personal Homepage
+# Fang Cheng Academic Homepage
 
-This is a lightweight static academic homepage. It can be opened directly in a browser or deployed with GitHub Pages.
+This is a lightweight static academic homepage for Fang Cheng. It can be opened directly in a browser or deployed with GitHub Pages.
 
 ## Edit Content
 
 - Main page content: `index.html`
 - Visual style: `styles.css`
 - Navigation highlight behavior: `script.js`
+- Downloadable CV: `CV_FC.pdf`
 
-Most profile details are intentionally left as placeholders so real information can be added later.
+The page includes academic profile information, publications, research themes, education, experience, honors, skills, and contact details.
 
 ## Preview Locally
 

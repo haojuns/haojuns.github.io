@@ -1,13 +1,15 @@
 :root {
   --bg: #ffffff;
-  --text: #252a31;
-  --muted: #67717d;
-  --line: #e6e9ed;
-  --link: #0645ad;
-  --link-hover: #0a58ca;
-  --panel: #f8f5ff;
-  --panel-edge: #384b60;
+  --text: #242a31;
+  --muted: #64707d;
+  --line: #e5e9ee;
+  --link: #0756a5;
+  --link-hover: #0a6acb;
+  --panel: #f4faf8;
+  --panel-edge: #2f7d73;
   --accent: #2f7d73;
+  --accent-soft: #dff0ec;
+  --warm: #9a5b12;
   --nav-height: 58px;
   --page-max: 1280px;
 }
@@ -70,7 +72,7 @@ a:hover {
   padding: 0 13px;
   color: var(--muted);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 650;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
@@ -83,8 +85,8 @@ a:hover {
 
 .page-shell {
   display: grid;
-  grid-template-columns: 270px minmax(0, 1fr);
-  gap: 42px;
+  grid-template-columns: 278px minmax(0, 1fr);
+  gap: 44px;
   max-width: var(--page-max);
   margin: 0 auto;
   padding: 34px 22px 70px;
@@ -106,7 +108,7 @@ a:hover {
   border-radius: 50%;
   background:
     radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.92) 0 14%, transparent 15%),
-    linear-gradient(135deg, #d7eff2 0%, #8fbcc6 48%, #496a80 100%);
+    linear-gradient(135deg, #d7eff2 0%, #92c5be 48%, #4d6679 100%);
   color: #ffffff;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
@@ -126,12 +128,12 @@ a:hover {
 
 .profile-card h1 {
   margin: 0 0 2px;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.25;
 }
 
 .profile-subtitle {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
   color: var(--text);
   font-size: 15px;
 }
@@ -142,7 +144,7 @@ a:hover {
 }
 
 .profile-meta p {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 
 .profile-links {
@@ -162,10 +164,15 @@ a:hover {
 
 .link-icon {
   display: inline-grid;
-  flex: 0 0 18px;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
   place-items: center;
-  color: #111111;
-  font-size: 15px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: #17443f;
+  font-size: 12px;
+  font-weight: 800;
   line-height: 1;
 }
 
@@ -188,21 +195,42 @@ a:hover {
   padding-top: 2px;
 }
 
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--warm);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.intro-section h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
 .intro-section p {
   margin: 0 0 10px;
 }
 
-.compact-list {
+.highlight-list,
+.compact-list,
+.detail-list,
+.theme-list {
   margin: 0 0 18px 28px;
   padding: 0;
 }
 
-.compact-list li {
-  margin: 4px 0;
+.highlight-list li,
+.compact-list li,
+.detail-list li,
+.theme-list li {
+  margin: 5px 0;
 }
 
 .section-block {
-  padding: 15px 0 8px;
+  padding: 18px 0 10px;
   border-top: 1px solid var(--line);
 }
 
@@ -211,62 +239,124 @@ a:hover {
 }
 
 .section-block h2 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   font-size: 24px;
   line-height: 1.25;
+}
+
+.section-block h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 .section-block p {
   margin: 0 0 10px;
 }
 
+.muted-text {
+  color: var(--muted);
+}
+
 .scroll-panel {
-  max-height: 220px;
+  max-height: 230px;
   overflow-y: auto;
   border-left: 4px solid var(--panel-edge);
   background: var(--panel);
   padding: 14px 18px;
-  scrollbar-color: #526477 #eceaf2;
+  scrollbar-color: #526477 #edf3f1;
 }
 
-.section-note {
-  margin-bottom: 13px;
-  color: var(--muted);
+.publication-list {
+  display: grid;
+  gap: 0;
 }
 
 .publication-item {
-  padding: 10px 0 14px;
-  border-top: 1px solid #eef0f2;
+  padding: 14px 0 16px;
+  border-top: 1px solid #edf0f3;
+}
+
+.publication-item:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .publication-venue {
   margin-bottom: 4px;
   color: var(--muted);
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .publication-item h3 {
-  margin: 0 0 5px;
   color: #1d3760;
-  font-size: 18px;
-  line-height: 1.35;
+}
+
+.publication-note {
+  color: var(--warm);
+  font-weight: 700;
 }
 
 .timeline-section {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 138px minmax(0, 1fr);
+  gap: 18px;
   align-items: start;
 }
 
 .timeline-item time {
   color: var(--muted);
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfcfd;
+  padding: 6px 12px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+}
+
+.contact-list div {
+  min-width: 0;
+}
+
+.contact-list dt {
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .sr-only {
@@ -317,35 +407,40 @@ a:hover {
     grid-column: 2;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .timeline-item {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 620px) {
   body {
     font-size: 15px;
   }
 
-  .nav-link {
-    padding: 0 11px;
-  }
-
   .page-shell {
-    padding: 20px 16px 48px;
+    padding-right: 18px;
+    padding-left: 18px;
   }
 
   .profile-card {
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: 94px minmax(0, 1fr);
     gap: 0 16px;
   }
 
   .avatar {
-    width: 96px;
-    height: 96px;
-    border-width: 5px;
+    width: 94px;
+    height: 94px;
+    border-width: 4px;
   }
 
   .avatar span {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
     font-size: 20px;
   }
 
@@ -353,14 +448,12 @@ a:hover {
     font-size: 22px;
   }
 
-  .profile-subtitle,
-  .profile-meta,
-  .profile-links a {
-    font-size: 14px;
-  }
-
   .profile-links {
     grid-template-columns: 1fr;
+  }
+
+  .intro-section h2 {
+    font-size: 28px;
   }
 
   .section-block h2 {
@@ -369,6 +462,6 @@ a:hover {
 
   .timeline-item {
     grid-template-columns: 1fr;
-    gap: 2px;
+    gap: 4px;
   }
 }

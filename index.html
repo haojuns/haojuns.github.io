@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Fang Cheng's personal academic homepage." />
+    <meta
+      name="description"
+      content="Fang Cheng's academic homepage: research, publications, education, experience, honors, and contact information."
+    />
     <title>Fang Cheng - Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="top-nav" aria-label="Primary navigation">
-        <a class="nav-link is-active" href="#home">Homepage</a>
-        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#news">News</a>
         <a class="nav-link" href="#publications">Publications</a>
-        <a class="nav-link" href="#services">Academic Services</a>
-        <a class="nav-link" href="#grants">Grants</a>
-        <a class="nav-link" href="#honors">Honors and Awards</a>
-        <a class="nav-link" href="#education">Educations</a>
-        <a class="nav-link" href="#talks">Invited Talks</a>
-        <a class="nav-link" href="#internships">Internships</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#honors">Honors</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -30,91 +33,242 @@
         </div>
 
         <h1>Fang Cheng</h1>
-        <p class="profile-subtitle">Personal Homepage</p>
+        <p class="profile-subtitle">Ph.D. Student in Data Science</p>
 
         <div class="profile-meta">
-          <p>Affiliation to be added</p>
-          <p>Location to be added</p>
+          <p>City University of Hong Kong</p>
+          <p>Hong Kong, China</p>
         </div>
 
         <ul class="profile-links" aria-label="Profile links">
-          <li><span class="link-icon">@</span><a href="#contact">Email</a></li>
-          <li><span class="link-icon">A</span><a href="#about">About</a></li>
+          <li>
+            <span class="link-icon">@</span>
+            <a href="mailto:chefang9-c@my.cityu.edu.hk">Email</a>
+          </li>
           <li><span class="link-icon">P</span><a href="#publications">Publications</a></li>
-          <li><span class="link-icon">C</span><a href="#contact">Contact</a></li>
+          <li><span class="link-icon">R</span><a href="#research">Research</a></li>
+          <li><span class="link-icon">C</span><a href="CV_FC.pdf">Curriculum Vitae</a></li>
         </ul>
       </aside>
 
       <div class="content-column">
         <section class="intro-section" id="about" aria-labelledby="about-title">
-          <h2 id="about-title" class="sr-only">About Me</h2>
+          <p class="eyebrow">Academic Homepage</p>
+          <h2 id="about-title">About Me</h2>
           <p>
-            Hi, I'm <strong>Fang Cheng</strong>. This personal academic homepage is being set up.
-            More details will be added later.
+            Hi, I'm <strong>Fang Cheng</strong>, a Ph.D. student in Data Science at
+            the City University of Hong Kong. I received my master's degree in
+            Computer Science and bachelor's degree in Data Science and Big Data
+            Technology from Northwestern Polytechnical University.
           </p>
           <p>
-            <strong>Research Overview:</strong>
+            My research focuses on resource-efficient mobile and edge AI systems,
+            including test-time adaptation, runtime-efficient sparse updates, domain
+            adaptation, and memory-efficient fine-tuning for Multi-LoRA LLMs.
           </p>
-          <ul class="compact-list">
-            <li>Research interests to be added.</li>
-            <li>Selected projects and collaborations to be added.</li>
+          <ul class="highlight-list">
+            <li><strong>Current:</strong> Ph.D. in Data Science, City University of Hong Kong.</li>
+            <li><strong>Recent work:</strong> CVPR 2026 TaskIT and IEEE TMC 2026 responsive test-time adaptation.</li>
+            <li><strong>Background:</strong> AIoT systems, on-device DNN deployment, and edge-cloud collaboration.</li>
           </ul>
         </section>
 
         <section class="section-block" id="news" aria-labelledby="news-title">
-          <h2 id="news-title"><span aria-hidden="true">&#128293;</span> News</h2>
+          <h2 id="news-title">News</h2>
           <div class="scroll-panel">
-            <p><strong>2026.05:</strong> Personal homepage initialized.</p>
-            <p><strong>Coming soon:</strong> News and updates will be added here.</p>
+            <p><strong>2026:</strong> TaskIT was accepted by CVPR 2026.</p>
+            <p><strong>2026:</strong> Responsive test-time model adaptation work appeared in IEEE Transactions on Mobile Computing.</p>
+            <p><strong>2025:</strong> Started the Ph.D. program in Data Science at the City University of Hong Kong.</p>
+            <p><strong>2025:</strong> SURGEON was selected as a CVPR 2025 Highlight paper.</p>
+            <p><strong>2024:</strong> AdaShadow received the Best Paper Honorable Mention at SenSys 2024.</p>
           </div>
         </section>
 
         <section class="section-block" id="publications" aria-labelledby="publications-title">
-          <h2 id="publications-title"><span aria-hidden="true">&#128221;</span> Publications</h2>
-          <div class="section-note">Publications will be added here.</div>
-          <article class="publication-item">
-            <div class="publication-venue">Year / Venue</div>
-            <h3>Publication title to be added</h3>
-            <p>Authors, venue, links, and notes can be added here.</p>
-          </article>
+          <h2 id="publications-title">Publications</h2>
+          <div class="publication-list">
+            <article class="publication-item">
+              <div class="publication-venue">IEEE Transactions on Mobile Computing, 2026</div>
+              <h3>Responsive Test-Time Model Adaptation for Mobile Applications via Runtime-efficient Sparse Updates</h3>
+              <p><strong>C. Fang</strong>, B. Guo, S. Liu, Z. Zhou, J. Tang, K. Ma, S. Luo, G. Song, Z. Yu.</p>
+              <p class="publication-note">CCF-A, Q1, IF: 7.7</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">CVPR 2026</div>
+              <h3>TaskIT: Memory-Efficient Fine-Tuning of Multi-LoRA LLMs via Cross-Task Importance Transfer</h3>
+              <p><strong>C. Fang</strong>, Z. Zhou, K. Ma, B. Guo.</p>
+              <p class="publication-note">CCF-A</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">SenSys 2024</div>
+              <h3>AdaShadow: Responsive Test-time Model Adaptation in Non-stationary Mobile Environments</h3>
+              <p><strong>C. Fang</strong>, S. Liu, Z. Zhou, B. Guo, J. Tang, K. Ma, Z. Yu.</p>
+              <p class="publication-note">CCF-B, top-3 conference in mobile computing, Best Paper Honorable Mention</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">UIC 2022</div>
+              <h3>Weather-oriented Domain Generalization of Semantic Segmentation for Autonomous Driving</h3>
+              <p><strong>C. Fang</strong>, B. Guo, S. Liu, K. Ma, Z. Yu.</p>
+              <p class="publication-note">CCF-C</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">CVPR 2025</div>
+              <h3>SURGEON: Memory-Adaptive Fully Test-Time Adaptation via Dynamic Sparsity Activation</h3>
+              <p>K. Ma, J. Tang, F. Dang, B. Guo, S. Liu, <strong>C. Fang</strong>, C. Fang, Z. Zhu, L. Wu, Y.-C. Chen, Z. Yu, Y. Liu.</p>
+              <p class="publication-note">Highlight paper, CCF-A</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">IEEE Communications Surveys &amp; Tutorials, 2023</div>
+              <h3>Enabling Resource-efficient AIoT System with Cross-level Optimization: A Survey</h3>
+              <p>S. Liu, B. Guo, <strong>C. Fang</strong>, Z. Wang, S. Luo, Z. Zhou, Z. Yu.</p>
+              <p class="publication-note">Q1, IF: 35.6</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">IEEE Transactions on Mobile Computing, 2024</div>
+              <h3>AdaShift: Anti-collapse and Real-time Deep Model Evolution for Mobile Vision Applications</h3>
+              <p>K. Ma, B. Guo, S. Liu, <strong>C. Fang</strong>, S. Luo, Z. Zheng, Z. Yu.</p>
+              <p class="publication-note">CCF-A, Q1, IF: 7.7</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">NeurIPS 2024</div>
+              <h3>HAWK: Learning to Understand Open-World Video Anomalies</h3>
+              <p>J. Tang, H. Lu, R. Wu, X. Xu, K. Ma, <strong>C. Fang</strong>, B. Guo, J. Lu, Q. Chen, Y.-C. Chen.</p>
+              <p class="publication-note">CCF-A</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">MobiSys 2024 Workshop</div>
+              <h3>Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls</h3>
+              <p>S. Liu, W. Zhou, Z. Zhou, B. Guo, M. Wang, <strong>C. Fang</strong>, Z. Lin, Z. Yu.</p>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-venue">RCAR 2023</div>
+              <h3>Object-specific Rapid Feature Adaption for One-shot Contour Primitive of Interest Extraction</h3>
+              <p>F. Qin, <strong>C. Fang</strong>, J. Li, W. Zhang.</p>
+            </article>
+          </div>
         </section>
 
-        <section class="section-block" id="services" aria-labelledby="services-title">
-          <h2 id="services-title">Academic Services</h2>
-          <p>Academic services will be added here.</p>
+        <section class="section-block" id="research" aria-labelledby="research-title">
+          <h2 id="research-title">Research</h2>
+          <ul class="theme-list">
+            <li>
+              <strong>Mobile and edge AI systems:</strong>
+              Runtime-efficient model updates, adaptive sparsity, and heterogeneous mobile processor inference.
+            </li>
+            <li>
+              <strong>Test-time adaptation:</strong>
+              Responsive adaptation for non-stationary mobile environments and resource-constrained applications.
+            </li>
+            <li>
+              <strong>Domain adaptation and generalization:</strong>
+              Edge-cloud collaborative domain mining and weather-oriented semantic segmentation.
+            </li>
+            <li>
+              <strong>Efficient LLM fine-tuning:</strong>
+              Cross-task importance transfer for memory-efficient Multi-LoRA LLM training.
+            </li>
+          </ul>
         </section>
 
-        <section class="section-block" id="grants" aria-labelledby="grants-title">
-          <h2 id="grants-title">Grants</h2>
-          <p>Grants will be added here.</p>
+        <section class="section-block timeline-section" id="education" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="timeline-item">
+            <time>09/2025 - 08/2029</time>
+            <div>
+              <h3>City University of Hong Kong</h3>
+              <p>Doctor of Philosophy in Data Science, Hong Kong, China.</p>
+              <p class="muted-text">Core modules: Data Mining and Knowledge Discovery, Social Foundations of Data Science, Advanced Statistics, Optimization.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>09/2022 - 03/2025</time>
+            <div>
+              <h3>Northwestern Polytechnical University</h3>
+              <p>Master of Computer Science, GPA: 87.6/100.</p>
+              <p class="muted-text">Core modules: Combinatorics, Mathematical Statistics, Data Mining Techniques, Internet of Things System Design.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>09/2018 - 07/2022</time>
+            <div>
+              <h3>Northwestern Polytechnical University</h3>
+              <p>Bachelor of Data Science and Big Data Technology, GPA: 87.1/100.</p>
+              <p class="muted-text">Core modules: Probability Theory and Mathematical Statistics, Computer Organization and Architecture, Operating System.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block timeline-section" id="experience" aria-labelledby="experience-title">
+          <h2 id="experience-title">Research Experiences and Internships</h2>
+          <div class="timeline-item">
+            <time>09/2022 - 10/2023</time>
+            <div>
+              <h3>Project Leader, Northwestern Polytechnical University</h3>
+              <p class="muted-text">Xi'an, China</p>
+              <ul class="compact-list">
+                <li><strong>Topic:</strong> Cross-level toolkit for efficient on-device DNN deployment.</li>
+                <li><strong>Tasks:</strong> Developed hardware/software co-design algorithms to optimize resource utilization in DNN training and inference; packed the algorithms into software libraries for diverse mobile and edge devices.</li>
+                <li><strong>Output:</strong> Presented and demonstrated the toolkit at AIoTSys 2023; the extended version was accepted by the MobiSys 2024 Workshop.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>07/2022 - 08/2023</time>
+            <div>
+              <h3>Intern, Huawei</h3>
+              <p class="muted-text">Xi'an and Shenzhen, China</p>
+              <ul class="compact-list">
+                <li><strong>Topic:</strong> Edge-cloud collaborative domain mining and adaptation.</li>
+                <li><strong>Tasks:</strong> Designed an end-to-end hidden domain adaptation framework; prototyped and evaluated the framework for real-time domain adaptation in robot campus inspection.</li>
+                <li><strong>Output:</strong> One paper accepted by IEEE Transactions on Mobile Computing.</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section class="section-block" id="honors" aria-labelledby="honors-title">
           <h2 id="honors-title">Honors and Awards</h2>
-          <p>Honors and awards will be added here.</p>
+          <ul class="detail-list">
+            <li><strong>2024:</strong> Outstanding Graduate Student, Northwestern Polytechnical University.</li>
+            <li><strong>2023:</strong> First Class Scholarship (Postgraduate).</li>
+          </ul>
         </section>
 
-        <section class="section-block timeline-section" id="education" aria-labelledby="education-title">
-          <h2 id="education-title">Educations</h2>
-          <div class="timeline-item">
-            <time>Year</time>
-            <p>Education record to be added.</p>
-          </div>
-        </section>
-
-        <section class="section-block" id="talks" aria-labelledby="talks-title">
-          <h2 id="talks-title">Invited Talks</h2>
-          <p>Invited talks will be added here.</p>
-        </section>
-
-        <section class="section-block" id="internships" aria-labelledby="internships-title">
-          <h2 id="internships-title">Internships</h2>
-          <p>Internships will be added here.</p>
+        <section class="section-block" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Languages and Skills</h2>
+          <ul class="tag-list" aria-label="Languages and skills">
+            <li>Mandarin (native)</li>
+            <li>English (fluent, IELTS 6.5)</li>
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
         </section>
 
         <section class="section-block" id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
-          <p>Contact details will be added here.</p>
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:chefang9-c@my.cityu.edu.hk">chefang9-c@my.cityu.edu.hk</a></dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+8616639807850">(+86) 16639807850</a></dd>
+            </div>
+            <div>
+              <dt>CV</dt>
+              <dd><a href="CV_FC.pdf">Download CV_FC.pdf</a></dd>
+            </div>
+          </dl>
         </section>
       </div>
     </main>
