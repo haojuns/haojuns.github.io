@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Fang Cheng's academic homepage: research, publications, education, experience, honors, and contact information."
+      content="Fang Cheng's academic homepage: research, publications, education, and contact information."
     />
     <title>Fang Cheng - Homepage</title>
     <link rel="stylesheet" href="styles.css" />
@@ -17,19 +17,15 @@
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#news">News</a>
         <a class="nav-link" href="#publications">Publications</a>
-        <a class="nav-link" href="#research">Research</a>
         <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#honors">Honors</a>
-        <a class="nav-link" href="#skills">Skills</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </header>
 
     <main class="page-shell" id="home">
       <aside class="profile-card" aria-label="Profile">
-        <div class="avatar" aria-hidden="true">
-          <span>FC</span>
+        <div class="profile-photo-frame">
+          <img class="profile-photo" src="profile.jpg" alt="Fang Cheng" />
         </div>
 
         <h1>Fang Cheng</h1>
@@ -46,8 +42,7 @@
             <a href="mailto:chefang9-c@my.cityu.edu.hk">Email</a>
           </li>
           <li><span class="link-icon">P</span><a href="#publications">Publications</a></li>
-          <li><span class="link-icon">R</span><a href="#research">Research</a></li>
-          <li><span class="link-icon">C</span><a href="CV_FC.pdf">Curriculum Vitae</a></li>
+          <li><span class="link-icon">C</span><a href="#contact">Contact</a></li>
         </ul>
       </aside>
 
@@ -62,14 +57,17 @@
             Technology from Northwestern Polytechnical University.
           </p>
           <p>
-            My research focuses on resource-efficient mobile and edge AI systems,
-            including test-time adaptation, runtime-efficient sparse updates, domain
-            adaptation, and memory-efficient fine-tuning for Multi-LoRA LLMs.
+            My research focuses on resource-efficient mobile and edge AI systems.
+            I work on runtime-efficient sparse updates, adaptive sparsity, and
+            heterogeneous mobile processor inference, with recent projects in
+            responsive test-time adaptation for non-stationary mobile environments,
+            edge-cloud collaborative domain mining, weather-oriented semantic
+            segmentation, and memory-efficient fine-tuning for Multi-LoRA LLMs.
           </p>
           <ul class="highlight-list">
             <li><strong>Current:</strong> Ph.D. in Data Science, City University of Hong Kong.</li>
             <li><strong>Recent work:</strong> CVPR 2026 TaskIT and IEEE TMC 2026 responsive test-time adaptation.</li>
-            <li><strong>Background:</strong> AIoT systems, on-device DNN deployment, and edge-cloud collaboration.</li>
+            <li><strong>Research interests:</strong> mobile AI systems, test-time adaptation, domain adaptation and generalization, and efficient LLM fine-tuning.</li>
           </ul>
         </section>
 
@@ -157,28 +155,6 @@
           </div>
         </section>
 
-        <section class="section-block" id="research" aria-labelledby="research-title">
-          <h2 id="research-title">Research</h2>
-          <ul class="theme-list">
-            <li>
-              <strong>Mobile and edge AI systems:</strong>
-              Runtime-efficient model updates, adaptive sparsity, and heterogeneous mobile processor inference.
-            </li>
-            <li>
-              <strong>Test-time adaptation:</strong>
-              Responsive adaptation for non-stationary mobile environments and resource-constrained applications.
-            </li>
-            <li>
-              <strong>Domain adaptation and generalization:</strong>
-              Edge-cloud collaborative domain mining and weather-oriented semantic segmentation.
-            </li>
-            <li>
-              <strong>Efficient LLM fine-tuning:</strong>
-              Cross-task importance transfer for memory-efficient Multi-LoRA LLM training.
-            </li>
-          </ul>
-        </section>
-
         <section class="section-block timeline-section" id="education" aria-labelledby="education-title">
           <h2 id="education-title">Education</h2>
           <div class="timeline-item">
@@ -207,66 +183,12 @@
           </div>
         </section>
 
-        <section class="section-block timeline-section" id="experience" aria-labelledby="experience-title">
-          <h2 id="experience-title">Research Experiences and Internships</h2>
-          <div class="timeline-item">
-            <time>09/2022 - 10/2023</time>
-            <div>
-              <h3>Project Leader, Northwestern Polytechnical University</h3>
-              <p class="muted-text">Xi'an, China</p>
-              <ul class="compact-list">
-                <li><strong>Topic:</strong> Cross-level toolkit for efficient on-device DNN deployment.</li>
-                <li><strong>Tasks:</strong> Developed hardware/software co-design algorithms to optimize resource utilization in DNN training and inference; packed the algorithms into software libraries for diverse mobile and edge devices.</li>
-                <li><strong>Output:</strong> Presented and demonstrated the toolkit at AIoTSys 2023; the extended version was accepted by the MobiSys 2024 Workshop.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>07/2022 - 08/2023</time>
-            <div>
-              <h3>Intern, Huawei</h3>
-              <p class="muted-text">Xi'an and Shenzhen, China</p>
-              <ul class="compact-list">
-                <li><strong>Topic:</strong> Edge-cloud collaborative domain mining and adaptation.</li>
-                <li><strong>Tasks:</strong> Designed an end-to-end hidden domain adaptation framework; prototyped and evaluated the framework for real-time domain adaptation in robot campus inspection.</li>
-                <li><strong>Output:</strong> One paper accepted by IEEE Transactions on Mobile Computing.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-block" id="honors" aria-labelledby="honors-title">
-          <h2 id="honors-title">Honors and Awards</h2>
-          <ul class="detail-list">
-            <li><strong>2024:</strong> Outstanding Graduate Student, Northwestern Polytechnical University.</li>
-            <li><strong>2023:</strong> First Class Scholarship (Postgraduate).</li>
-          </ul>
-        </section>
-
-        <section class="section-block" id="skills" aria-labelledby="skills-title">
-          <h2 id="skills-title">Languages and Skills</h2>
-          <ul class="tag-list" aria-label="Languages and skills">
-            <li>Mandarin (native)</li>
-            <li>English (fluent, IELTS 6.5)</li>
-            <li>Python</li>
-            <li>C++</li>
-          </ul>
-        </section>
-
         <section class="section-block" id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
           <dl class="contact-list">
             <div>
               <dt>Email</dt>
               <dd><a href="mailto:chefang9-c@my.cityu.edu.hk">chefang9-c@my.cityu.edu.hk</a></dd>
-            </div>
-            <div>
-              <dt>Phone</dt>
-              <dd><a href="tel:+8616639807850">(+86) 16639807850</a></dd>
-            </div>
-            <div>
-              <dt>CV</dt>
-              <dd><a href="CV_FC.pdf">Download CV_FC.pdf</a></dd>
             </div>
           </dl>
         </section>

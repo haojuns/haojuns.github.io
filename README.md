@@ -7,9 +7,9 @@ This is a lightweight static academic homepage for Fang Cheng. It can be opened 
 - Main page content: `index.html`
 - Visual style: `styles.css`
 - Navigation highlight behavior: `script.js`
-- Downloadable CV: `CV_FC.pdf`
+- Profile photo: `profile.jpg`
 
-The page includes academic profile information, publications, research themes, education, experience, honors, skills, and contact details.
+The page includes academic profile information, research themes, publications, education, and contact details.
 
 ## Preview Locally
 

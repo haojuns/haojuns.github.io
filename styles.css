@@ -98,32 +98,25 @@ a:hover {
   top: calc(var(--nav-height) + 24px);
 }
 
-.avatar {
-  display: grid;
-  place-items: center;
+.profile-photo-frame {
+  position: relative;
+  overflow: hidden;
   width: 174px;
   height: 174px;
   margin-bottom: 18px;
   border: 6px solid #f2f4f7;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.92) 0 14%, transparent 15%),
-    linear-gradient(135deg, #d7eff2 0%, #92c5be 48%, #4d6679 100%);
-  color: #ffffff;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 0 rgba(23, 40, 52, 0.06);
 }
 
-.avatar span {
-  display: grid;
-  place-items: center;
-  width: 86px;
-  height: 86px;
-  border: 2px solid rgba(255, 255, 255, 0.82);
-  border-radius: 50%;
-  background: rgba(20, 35, 48, 0.28);
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: 0;
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 72%;
+  transform: scale(1.72);
+  transform-origin: 52% 74%;
 }
 
 .profile-card h1 {
@@ -390,17 +383,11 @@ a:hover {
     align-items: start;
   }
 
-  .avatar {
+  .profile-photo-frame {
     grid-row: span 4;
     width: 120px;
     height: 120px;
     margin-bottom: 0;
-  }
-
-  .avatar span {
-    width: 58px;
-    height: 58px;
-    font-size: 24px;
   }
 
   .profile-links {
@@ -432,16 +419,10 @@ a:hover {
     gap: 0 16px;
   }
 
-  .avatar {
+  .profile-photo-frame {
     width: 94px;
     height: 94px;
     border-width: 4px;
-  }
-
-  .avatar span {
-    width: 46px;
-    height: 46px;
-    font-size: 20px;
   }
 
   .profile-card h1 {
